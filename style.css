@@ -24,6 +24,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+    margin: 20px;
 }
 ol, ul {
     list-style: none;
@@ -49,8 +50,6 @@ table {
     height: 100px;
     background: url(./image/player.png) center / cover no-repeat;
     position: absolute;
-    left: 125px;
-    bottom: 10px;
 }
 .gameArea {
     width: 300px;
@@ -67,4 +66,24 @@ table {
     background: #fff;
     left: 50%;
     transform: translateX(-50%);
+}
+.start, .score {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 2rem 0;
+    text-align: center;
+    z-index: 200;
+    color: #fff;
+    font-size: 1.5rem;
+    background: #000;
+    cursor: pointer;
+    font-family: 'sans-serif', Arial;
+    font-weight: bold;
+}
+.score {
+    color: skyblue;
+    padding: 1rem 0px;
 }
